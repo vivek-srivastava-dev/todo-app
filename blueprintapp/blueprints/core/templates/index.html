@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+{% block content %}
+  <h1>Welcome!</h1>
+
+<a href="{{ url_for('user.index') }}"> User Page</a>
+<a href="{{ url_for('todos.index') }}"> Todo Page</a>
+
+{% endblock %}

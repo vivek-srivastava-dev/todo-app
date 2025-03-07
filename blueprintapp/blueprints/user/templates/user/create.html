@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} USERS {% endblock %}
+{% block content %}
+  <h1>Create User</h1>
+
+<form action="{{ url_for('user.create_user') }}" method="post">
+    <input type="text" name="name" id="name" placeholder="Name" required="required"> <br>
+    <input type="number" name="age" id="age" placeholder="Age" required="required"> <br>
+    <input type="text" name="job" id="job" placeholder="Job" required="required"> <br>
+    <input type="submit" value="Create User"> <br>
+</form>
+<br>
+<a href="{{ url_for('core.index')}}"> Home </a>
+
+{% endblock %}

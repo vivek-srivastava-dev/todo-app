@@ -1,5 +1,11 @@
 Clear All Migrations and DB File and instances before running the docker
 
+TO apply migrations in the db
+cd blueprintapp
+flask db init
+flask db migrate
+flask db upgrade
+
 To generate the requirements.txt file...update the virtual environment and then pip3 freeze > requirements.txt
 
 1. docker build --tag blueprintapp-docker .

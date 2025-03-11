@@ -1,7 +1,7 @@
 .venv/*
 .venv
 venv
-.idea
+.idea/
 .idea/*
 instance/
 migrations/
